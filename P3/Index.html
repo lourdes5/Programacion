@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>  
+  <meta charset="utf-8">
+  <title>GoodTunes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+  <script type="text/javascript" src="bootstrap/bootstrap.bundle.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <link href="style/Index.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="row my-n4">
+        <div class="col-sm py-4">
+          <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="Index.html">
+                <img id="navlogo" src="img/logo.png" width="93,8" height="10,8">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Listas.html">Listas</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Canciones</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="Canciones_Genero.html">Por Géneros</a></li>
+                            <li><a class="dropdown-item" href="Canciones_Artista.html">Por Artista</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Noticias.html">Noticias</a>
+                    </li>
+                  </ul>
+                  <form class="d-flex">
+                    <input class="form-control me-2" type="search" id = 'buscador' onekeyup = 'autocompletado()' placeholder="Buscar" aria-label="Search">
+                    <button class="btn" type="submit">Buscar</button>
+                  </form>
+              </div>
+            </div>
+        </nav>
+     </div>
+</div>
+
+      <!-- grid -->
+<div id = "encabezado" class="row2">
+    <div id = "con_logo" class="col2"> 
+      <img id= "logo" src="img/logo.png" height="54" width = "469">
+      <p id="lema"> La web para los amantes de la música </p>
+    </div>
+    <div class="col2"> 
+      <form id = "inicio_sesion" class="form-inline" action="/action_page.php">
+        <label for="usuario" class="mr-sm-2"> Nombre de usuario: </label>
+        <input type="email" class="form-control mb-2 mr-sm-2" placeholder="Introduce usuario" id="usuario">
+        <label for="pwd" class="mr-sm-2"> Contraseña: </label>
+        <input type="password" class="form-control mb-2 mr-sm-2" placeholder="Introduce contraseña" id="pwd">
+        <div class="form-check mb-2 mr-sm-2">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox"> Recuerdame
+          </label>
+        </div>
+        <button id = "boton1" type="submit" class="btn">Entrar</button>
+        <input type="button" id = "boton2" class="btn" onclick="aRegistro();" value="Registrarme" />
+      </form>
+
+    </div>
+</div>
+
+
+<div id="elementos">
+  <h1 id="elemento1"> 
+    GoodTunes es la web para los amantes de la música
+  </h1>
+  <br>
+  <div class="elementos2">
+    <div class="elemento1">
+      Hacer listas de canciones o albums escuchados o pendientes por escuchar.
+    </div>
+    <div class="elemento2">
+      Hacer pública tu lista y compartirla con el resto de usuarios
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="elementos2">
+    <div class="elemento3">
+      Acceder a listas de otros usuarios
+    </div>
+    <div class="elemento4">
+      Valorar canciones y albums
+    </div>
+  </div>
+
+</div>
+
+<br>
+<br>
+
+<div id="noticias_listas">
+  <div class="tablas">
+
+    <h2 class="tit_tabla">
+      Listas más importantes
+    </h2>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Autor</th>
+          <th scope="col">Seguidores</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Exitos</td>
+          <td>SofiaJL</td>
+          <td>15.700</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Club</td>
+          <td>MKN</td>
+          <td>10.540</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Mis Favs</td>
+          <td>JoseFer</td>
+          <td>9.800</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <br>
+
+  <div class="tablas">
+    <h2 class="tit_tabla">
+      Albums Mejor Valorados 
+    </h2>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col"> </th>
+          <th scope="col">Título</th>
+          <th scope="col">Artista</th>
+          <th scope="col">Valoración (/5)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>
+            <img src="img/Abbey-Road.jpg" width="50" height="50">
+          </td>
+          <td>Abbey Road</td>
+          <td>The beatles</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>
+            <img src="img/thriller.jpg" width="50" height="50">
+          </td>
+          <td>Thriller</td>
+          <td>Michael Jackson</td>
+          <td>4.75</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>
+            <img src="img/lemonade.jpg" width="50" height="50">
+          </td>
+          <td>Beyoncé</td>
+          <td>Lemonade</td>
+          <td>4.5</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <img class="card-img-top" src="img/Billboard_Hot_100.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Lista Billboard de éxitos</h5>
+      <p sclass="card-text">El Billboard Hot 100 es una gran lista de éxitos musicales de los 100 sencillos más vendidos en Estados Unidos</p>
+      <a href="https://www.billboard.com/charts/hot-100" class="btn btn-primary">Visitar web</a>
+    </div>
+  </div>
+
+</div>
+
+<br>
+<br>
+<br>
+
+<div id="footer">
+    <footer>
+      <div id="in-footer">
+        <div>
+          <p>¿Quiénes somos?</p>
+          <p>Contáctanos</p>
+          <p>Términos y condiciones</p>
+        </div>
+        <div>
+          <p>Privacidad</p>
+          <p>Ayuda</p>
+          <p>Trabaja con nosotros</p>
+        </div>
+        <div>
+          <p>© 2021 GoodTunes, Inc.</p>
+        </div>
+      </div>
+    </footer>
+</div>
+
+<script src="src/funciones.js" type="text/javascript"></script>
+
+</body>
+
+

@@ -1,0 +1,59 @@
+        
+    /*Tipografia*/
+    * {
+      font-family: Avenir;
+    }
+
+    /*barra de navegacion*/
+    #navlogo {
+      margin-left: 50px;
+    }
+
+    /*logo principal*/
+    #logo {
+      margin: auto; 
+      display: block; 
+    }
+
+    #con_logo {
+      padding: 75px 50px 0px 50px;
+    }
+
+    /*formulario de inicio de sesion*/
+    .Registro {
+      padding: 50px 500px 100px 500px;
+/*      margin-top: 50px;
+      margin-bottom: 50px;
+      margin-left: 5px;
+      margin-right: 5px;*/
+    }
+
+    #inicio_sesion {
+      margin-right: 50px;
+      background-color: #FFA07A;
+      padding: 25px 25px 25px;
+      border-radius: 10px;
+      color: white;
+    }
+
+
+    /*estilo de botones*/
+    .btn {
+      background-color: rgba(250, 128, 114, 1); /*salmon*/
+      border-color: white;
+      color: white;
+    }
+
+    /*pie de pagina*/
+    #footer {
+      background-color: #FFA07A;
+      margin-bottom: 0px;
+      margin-right: 0px;
+      margin-left: 0px;
+      padding: 25px 50px 25px;
+    }
+
+    #in-footer {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }

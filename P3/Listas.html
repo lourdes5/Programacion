@@ -1,0 +1,106 @@
+<!DOCTYPE>
+<html lang="es">
+<head>  
+  <meta charset="utf-8">
+  <title>GoodTunes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style/bootstrap.min.css" rel="stylesheet">
+  <script type="text/javascript" src="bootstrap/bootstrap.bundle.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <link href="style/Listas.css" rel="stylesheet">
+</head>
+<body>
+
+
+<div class="row my-n4">
+        <div class="col-sm py-4">
+          <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="Index.html">
+                <img id="navlogo" src="img/logo.png" width="93,8" height="10,8">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Listas.html">Listas</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Canciones</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="Canciones_Genero.html">Por Géneros</a></li>
+                            <li><a class="dropdown-item" href="Canciones_Artista.html">Por Artista</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Noticias.html">Noticias</a>
+                    </li>
+                  </ul>
+                  <form class="d-flex">
+                    <input class="form-control me-2" type="search" id = 'buscador' onekeyup = 'autocompletado()' placeholder="Buscar" aria-label="Search">
+                    <button class="btn" type="submit">Buscar</button>
+                  </form>
+              </div>
+            </div>
+        </nav>
+      </div>
+  </div>
+
+    <div id = "con_logo"> 
+      <img id= "logo" src="img/logo.png" height="54" width = "469">
+    </div>
+
+    <div class="container" id="formulario">        
+        <form action="">
+            <input type="hidden" id='hidden_token'>
+            <div class="col-sm-6 form-group row mt-4 px-0">
+                <label for="Genre" class="form-label col-sm-2">Género:</label>
+                <select name="" id="select_genre" class="form-control form-control-sm col-sm-10">
+                    <option>Selecciona...</option>                    
+                </select>
+            </div>
+            <div class="col-sm-6 form-group row px-0">
+                <label for="Genre" class="form-label col-sm-2">Playlists:</label>
+                <select name="" id="select_playlist" class="form-control form-control-sm col-sm-10">
+                    <option>Selecciona...</option>                    
+                </select>
+            </div>                  
+            <div class="col-sm-6 row form-group px-0" id="btn-buscar">
+                <button type="submit" id="btn_submit" class="btn btn-success col-sm-12">Buscar</button>
+            </div>          
+        </form>        
+        <div class="row">
+            <div class="col-sm-6 px-0">
+                <div class="list-group song-list">
+                    
+                </div>                                             
+            </div>
+            <div class="offset-md-1 col-sm-4" id="song-detail">                
+            </div>
+        </div>   
+    </div>
+
+<div id="footer">
+    <footer>
+      <div id="in-footer">
+        <div>
+          <p>¿Quiénes somos?</p>
+          <p>Contáctanos</p>
+          <p>Términos y condiciones</p>
+        </div>
+        <div>
+          <p>Privacidad</p>
+          <p>Ayuda</p>
+          <p>Trabaja con nosotros</p>
+        </div>
+        <div>
+          <p>© 2021 GoodTunes, Inc.</p>
+        </div>
+      </div>
+    </footer>
+</div>
+    <script src="src/Listas.js" type="text/javascript"></script>
+    <script src="src/funciones.js" type="text/javascript"></script>
+</body>

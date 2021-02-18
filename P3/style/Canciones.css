@@ -1,0 +1,84 @@
+        
+    /*Tipografia*/
+    * {
+      font-family: Avenir;
+    }
+
+    /*barra de navegacion*/
+    #navlogo {
+      margin-left: 50px;
+    }
+
+    /*logo principal*/
+    #logo {
+      margin: auto; 
+      display: block; 
+    }
+
+    #con_logo {
+      padding: 75px 50px 100px 50px;
+    }
+
+    #contenido {
+      padding: 50px 50px 300px 50px;
+    }
+
+    /*pie de pagina*/
+    #footer {
+      background-color: #FFA07A;
+      margin-bottom: 0px;
+      margin-right: 0px;
+      margin-left: 0px;
+      padding: 25px 50px 25px;
+    }
+
+    #in-footer {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+
+#img-songs {
+    width:140px;
+    height:140px;
+    border: 10px;
+    border-color: black;
+    border-radius: 10px; 
+}
+
+label {
+    padding-top:10px;
+}
+
+
+.form-label {
+    padding-left:0px;
+}
+
+.btn-success {
+    background-color: #FFA07A;
+    border-color: grey;
+}
+
+
+.btn-success:hover {
+    background-color: grey;
+}
+
+#formulario {
+  padding-left: 500px; 
+  padding-bottom: 160px; 
+  padding-top: 50px; 
+}
+
+#btn-buscar {
+  padding-top: 10px;
+}
+
+#buscador-ayg {
+  padding-right: 200px;
+  padding-left: 200px; 
+  padding-bottom: 300px; 
+}
+
+

@@ -1,0 +1,65 @@
+        
+    /*Tipografia*/
+    * {
+      font-family: Avenir;
+    }
+
+    /*barra de navegacion*/
+    #navlogo {
+      margin-left: 50px;
+    }
+
+    /*logo principal*/
+    #logo {
+      margin: auto; 
+      display: block; 
+    }
+
+    #con_logo {
+      padding: 75px 50px 0px 50px;
+    }
+
+    #noticias {
+      padding: 50px 50px 30px 50px;
+    }
+
+    /*pie de pagina*/
+    #footer {
+      background-color: #FFA07A;
+      margin-bottom: 0px;
+      margin-right: 0px;
+      margin-left: 0px;
+      padding: 25px 50px 25px;
+    }
+
+    #in-footer {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+
+/*    #noticias {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }*/
+
+    /*card con el enlace a Billboard*/
+    .card {
+      margin-left: 200px;
+      width: 18rem;
+    }
+
+    .card-img-top {
+      width: 50px;
+      height: 50px;
+    }
+
+    .btn-primary {
+      background-color: #FFA07A;
+      border-color: grey;
+    }
+
+    .btn-primary:hover {
+    background-color: grey;
+}
+

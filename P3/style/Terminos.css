@@ -1,0 +1,38 @@
+        
+    /*Tipografia*/
+    * {
+      font-family: Avenir;
+    }
+
+    /*barra de navegacion*/
+    #navlogo {
+      margin-left: 50px;
+    }
+
+    /*logo principal*/
+    #logo {
+      margin: auto; 
+      display: block; 
+    }
+
+    #con_logo {
+      padding: 75px 50px 0px 50px;
+    }
+
+    #contenido {
+      padding: 50px 50px 300px 50px;
+    }
+
+    /*pie de pagina*/
+    #footer {
+      background-color: #FFA07A;
+      margin-bottom: 0px;
+      margin-right: 0px;
+      margin-left: 0px;
+      padding: 25px 50px 25px;
+    }
+
+    #in-footer {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
